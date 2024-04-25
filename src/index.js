@@ -16,7 +16,7 @@ connectDb()
         console.log("Error:",error)
         throw error
     })
-    app.listen(process.env.PORT,()=>{
+    app.listen(process.env.PORT || 5000,()=>{
         console.log("MONGODB connected at PORT: ",process.env.PORT)
 
     })
